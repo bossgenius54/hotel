@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>О нас</title>
+    <title>Blog</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Travelix Project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/about_styles.css">
+    <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
 </head>
 
 <body>
@@ -89,64 +88,138 @@
     <!-- Home -->
 
     <div class="home">
-        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about/aboutbg.jpg"></div>
+        <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/news/bg-news.jpg"></div>
         <div class="home_content">
-            <div class="home_title">Біз туралы</div>
+            <div class="home_title">Жаңалықтар</div>
         </div>
     </div>
 
-    <!-- Intro -->
+    <!-- Blog -->
 
-    <div class="intro">
-        <div class="container hotel-info">
+    <div class="blog">
+        <div class="container">
             <div class="row">
-                <div class="col-md-7">
-                    <div class="intro_content">
-                        <div class="intro_title">Жақсының бәрі бізде!</div>
-                        <div class="intro_text">«Солнечный» қонақ үйі тау мен өзен арасында көркем ортада, өзеннен 500 метр аралықта тыныш жерде, Бурабай демалу орнының дәл центрінде орналасқан. Біз сіздерге 2,3,4-адамдық ыңғайлы бөлмелер ұсынамыз.<br /><br />
-                            <ul>
-                                <li>Бөлмелерде душ және сан.узелдер бар</li>
-                                <li>Монша мен ағаштан жасалған жазғы үйлер бар</li>
+
+                <!-- Blog Content -->
+
+                <div class="col-lg-8">
+
+                    <div class="blog_post_container">
+
+                        <!-- Blog Post -->
+
+                        <div class="blog_post">
+                            <div class="blog_post_image">
+                                <div class="newsImg">
+                                    <img src="images/news/news1.jpg" alt="news">
+                                </div>
+                                <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
+                                    <div class="blog_post_day">05</div>
+                                    <div class="blog_post_month">Маусым, 2018</div>
+                                </div>
+                            </div>
+                            <div class="blog_post_title"><a href="#">Қонақ үйі курорттың қонақтарына өз есігін ашады</a></div>
+                            <div class="blog_post_text">
+                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post -->
+
+                        <div class="blog_post">
+                            <div class="blog_post_image">
+                                <div class="newsImg">
+                                    <img src="images/news/news2.jpg" alt="news">
+                                </div>
+                                <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
+                                    <div class="blog_post_day">08</div>
+                                    <div class="blog_post_month">Маусым, 2018</div>
+                                </div>
+                            </div>
+                            <div class="blog_post_title"><a href="#">Ағаштан жасалған сауна ашылды</a></div>
+                            <div class="blog_post_text">
+                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post -->
+
+                        <div class="blog_post">
+                            <div class="blog_post_image">
+                                <div class="newsImg">
+                                    <img src="images/news/news3.jpg" alt="news">
+                                </div>
+                                <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
+                                    <div class="blog_post_day">14</div>
+                                    <div class="blog_post_month">Маусым, 2018</div>
+                                </div>
+                            </div>
+                            <div class="blog_post_title"><a href="#">Біздің кең автотұрақ! Сіздің көліктеріңіз үшін тыныш, қауіпсіз орын.</a></div>
+                            <div class="blog_post_text">
+                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--
+                                        <div class="blog_navigation">
+                                            <ul>
+                                                <li class="blog_dot active"><div></div>01.</li>
+                                                <li class="blog_dot"><div></div>02.</li>
+                                                <li class="blog_dot"><div></div>03.</li>
+                                            </ul>
+                                        </div>
+                    -->
+                </div>
+
+                <!-- Blog Sidebar -->
+
+                <div class="col-lg-4 sidebar_col">
+
+                    <!-- Sidebar Gallery -->
+                    <div class="sidebar_gallery">
+                        <div class="sidebar_title">Instagram</div>
+                        <div class="gallery_container">
+                            <ul class="gallery_items d-flex flex-row align-items-start justify-content-between flex-wrap">
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta1.jpg" alt="insta">
+                                    </a>
+                                </li>
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta2.jpg" alt="insta">
+                                    </a>
+                                </li>
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta3.jpg" alt="insta">
+                                    </a>
+                                </li>
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta4.jpg" alt="insta">
+                                    </a>
+                                </li>
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta5.jpg" alt="insta">
+                                    </a>
+                                </li>
+                                <li class="gallery_item">
+                                    <a class="colorbox" href="https://www.instagram.com/domiki_borovoe_2018/" target="_blank">
+                                        <img src="./images/news/insta6.jpg" alt="insta">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 intro_video">
-                    <video width="450" height="370" controls>
-                        <source src="./images/about/video.mp4" type="video/mp4">
-                    </video>
 
-                </div>
-            </div>
-        </div>
-        <div class="hotel-offers">
-            <div class="container">
-                <div class="row">
-                    <h3 class="col-md-12">«Солнечный» қонақ үй мынадай жағдайлар жасалған:</h3>
-                    <div class="col-md-7">
-                        <ul>
-                            <li>Қонақ үй аумағында WI-FI-мен қамтамасыз етілген</li>
-                            <li>Кабельді телевидение</li>
-                            <li>Тұрақ орны</li>
-                            <li>Беседкалар (4 дана) ортақ қолданысқа арналған</li>
-                            <li>Мангалдар (3 дана) ортақ қолданысқа арналған</li>
-                        </ul>
-                        <ul>
-                            <li>Гриль аймағы, қазан, самаурын</li>
-                            <li>Ас үй және ыдыс-аяқ ортақ қолданысқа арналған</li>
-                            <li>Балалар бассейні мен құмсалғыш</li>
-                            <li>Душ және сан.узелдер</li>
-                            <li>Ағаштан жасалған монша -5000 тг./ сағ (4-5 адам)</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 intro_image">
-                        <img class="aboutImg" src="images/about/aboutus.jpg" alt="">
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
 
@@ -222,21 +295,12 @@
 
 </div>
 
-
-
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/about_custom.js"></script>
+<script src="js/blog_custom.js"></script>
 
 </body>
 

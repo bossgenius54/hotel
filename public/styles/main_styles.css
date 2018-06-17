@@ -1111,7 +1111,10 @@ section
 /*********************************
 7. Intro
 *********************************/
-
+.discount{
+    border: solid 5px #fff;
+    border-radius: 10px!important;
+}
 .intro
 {
 	width: 100%;
@@ -1207,7 +1210,7 @@ section
 }
 .intro_center h1
 {
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 700;
 	color: #FFFFFF;
 	letter-spacing: -0.05em;
@@ -1507,7 +1510,10 @@ section
 	height: 2px;
 	background: linear-gradient(to right, #fa9e1b, #8d4fff);
 }
-
+.test_image{
+    height: 400px;
+    overflow: hidden;
+}
 /*********************************
 10.1 Testimonials Slider
 *********************************/

@@ -37,8 +37,8 @@
                         </div>
                         <div class="user_box ml-auto">
                             @guest
-                            <div class="user_box_login user_box_link"><a href="/login">Вход</a></div>
-                            <div class="user_box_register user_box_link"><a href="/register">Регистрация</a></div>
+                            <div class="user_box_login user_box_link"><a href="/login">Кіру</a></div>
+                            <div class="user_box_register user_box_link"><a href="/register">Тіркелу</a></div>
                             @else
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item dropdown">
@@ -80,7 +80,7 @@
                                 <li class="main_nav_item"><a href="/">Басты бет</a></li>
                                 <li class="main_nav_item"><a href="/about">Біз туралы</a></li>
                                 <li class="main_nav_item"><a href="/offers">Бөлмелер</a></li>
-                                <li class="main_nav_item"><a href="/gallary">Галерея</a></li>
+                                <li class="main_nav_item"><a href="/blog">Жаңалықтар</a></li>
                                 <li class="main_nav_item"><a href="/contact">Контакт</a></li>
                             </ul>
                         </div>
@@ -124,7 +124,7 @@
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                             <h1>Солнечный</h1>
-                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="./about.html">Ары қарай оқу<span></span><span></span><span></span></a></div>
+                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="#bottom">Тапсырыс беру<span></span><span></span><span></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section_title">Лучшие предложения с номерами</h2>
+                    <h2 class="section_title">Қонақ үй бөлмелері</h2>
                 </div>
             </div>
             <div class="row offers_items">
@@ -414,7 +414,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">60 000 тг<span>за сутки</span></div>
+                                    <div class="offers_price">60 000 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -422,7 +422,7 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 20 мест</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 20 орын</p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
                                             <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -431,7 +431,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -451,7 +451,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">3 500 тг<span>за сутки</span></div>
+                                    <div class="offers_price">3 500 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -459,7 +459,7 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 2-х местный</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 2 орынды</p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
                                             <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -468,7 +468,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">3 500 тг<span>за сутки</span></div>
+                                    <div class="offers_price">3 500 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -496,7 +496,7 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 2-х местный</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 2 орынды</p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
                                             <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -505,7 +505,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -525,7 +525,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">2 000 тг<span>за сутки</span></div>
+                                    <div class="offers_price">2 000 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -533,7 +533,7 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 4-х местный</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 4 орынды</p>
                                     <p class="offers_text"></p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
@@ -543,7 +543,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -563,7 +563,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">2 000 тг<span>за сутки</span></div>
+                                    <div class="offers_price">2 000 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -571,8 +571,8 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 2-х местный</p>
-                                    <p class="offers_text"> Без удобств</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 2 орынды</p>
+                                    <p class="offers_text">Қолайлықсыз</p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
                                             <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -581,7 +581,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -601,7 +601,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="offers_content">
-                                    <div class="offers_price">2 000 тг<span>за сутки</span></div>
+                                    <div class="offers_price">2 000 тг<span>тәулігіне</span></div>
                                     <div class="rating_r rating_r_4 offers_rating">
                                         <i></i>
                                         <i></i>
@@ -609,8 +609,8 @@
                                         <i></i>
                                         <i></i>
                                     </div>
-                                    <p class="offers_text"><b>Условия размещения:</b> 2-х местный</p>
-                                    <p class="offers_text">Без удобств</p>
+                                    <p class="offers_text"><b>Ораналастыру жағдайы:</b> 2 орынды</p>
+                                    <p class="offers_text">Қолайлықсыз</p>
                                     <div class="offers_icons">
                                         <ul class="offers_icons_list">
                                             <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -619,7 +619,7 @@
                                             <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                         </ul>
                                     </div>
-                                    <div class="offers_link"><a href="offers.html">Смотреть далее</a></div>
+                                    {{--<div class="offers_link"><a href="offers.html">Смотреть далее</a></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -632,12 +632,14 @@
 
     <!-- Testimonials -->
 
+    <!-- Testimonials -->
+
     <div class="testimonials">
         <div class="test_border"></div>
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section_title">Отзывы наших клиентов</h2>
+                    <h2 class="section_title">Біз жайлы қонақтарымыз не ойлайды</h2>
                 </div>
             </div>
             <div class="row">
@@ -649,18 +651,54 @@
                         <div class="owl-carousel owl-theme test_slider">
 
                             <!-- Testimonial Item -->
+                            {{--<div class="owl-item">--}}
+                                {{--<div class="test_item">--}}
+                                    {{--<div class="test_image"><img src="./images/comment/img1.jpg" alt="comment"></div>--}}
+                                    {{--<div class="test_icon"><img src="images/backpack.png" alt=""></div>--}}
+                                    {{--<div class="test_content_container">--}}
+                                        {{--<div class="test_content">--}}
+                                            {{--<div class="test_item_info">--}}
+                                                {{--<div class="test_name">Дарина</div>--}}
+                                                {{--<div class="test_date">Сәуір 24, 2018</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="test_quote_title">" Қонақ үй керемет "</div>--}}
+                                            {{--<p class="test_quote_text">Бурабайға баратын болсаңыздар осы қонақ үйге келіңіздер!</p>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                            <!-- Testimonial Item -->
+                            {{--<div class="owl-item">--}}
+                                {{--<div class="test_item">--}}
+                                    {{--<div class="test_image"><img src="./images/comment/img2.jfif" alt="comment"></div>--}}
+                                    {{--<div class="test_icon"><img src="images/backpack.png" alt=""></div>--}}
+                                    {{--<div class="test_content_container">--}}
+                                        {{--<div class="test_content">--}}
+                                            {{--<div class="test_item_info">--}}
+                                                {{--<div class="test_name">Дана</div>--}}
+                                                {{--<div class="test_date">Мамыр 5, 2018</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="test_quote_title">" Қонақ үй керемет "</div>--}}
+                                            {{--<p class="test_quote_text">Қажетті жағдайлар жасалған. Керемет!</p>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                            <!-- Testimonial Item -->
                             <div class="owl-item">
                                 <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+                                    <div class="test_image"><img src="./images/comment/img3.jfif" alt="comment"></div>
                                     <div class="test_icon"><img src="images/backpack.png" alt=""></div>
                                     <div class="test_content_container">
                                         <div class="test_content">
                                             <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
-                                                <div class="test_date">Май 5, 2017</div>
+                                                <div class="test_name">Мадина</div>
+                                                <div class="test_date">Маусым 2, 2018</div>
                                             </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
+                                            <div class="test_quote_title">" Қонақ үй керемет "</div>
+                                            <p class="test_quote_text">Өте таза әрі көлге де жап-жақын орналасқан.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -669,16 +707,16 @@
                             <!-- Testimonial Item -->
                             <div class="owl-item">
                                 <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+                                    <div class="test_image"><img src="./images/comment/img4.jfif" alt="comment"></div>
                                     <div class="test_icon"><img src="images/backpack.png" alt=""></div>
                                     <div class="test_content_container">
                                         <div class="test_content">
                                             <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
+                                                <div class="test_name">Айгерім</div>
                                                 <div class="test_date">Май 5, 2017</div>
                                             </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
+                                            <div class="test_quote_title">" Қонақ үй керемет "</div>
+                                            <p class="test_quote_text">Бағасы да арзан, жағдайлары да керемет!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -687,16 +725,16 @@
                             <!-- Testimonial Item -->
                             <div class="owl-item">
                                 <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+                                    <div class="test_image"><img src="./images/comment/img5.jfif" alt="comment"></div>
                                     <div class="test_icon"><img src="images/backpack.png" alt=""></div>
                                     <div class="test_content_container">
                                         <div class="test_content">
                                             <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
-                                                <div class="test_date">Май 5, 2017</div>
+                                                <div class="test_name">Дастан</div>
+                                                <div class="test_date">Сәуір 24, 2018</div>
                                             </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
+                                            <div class="test_quote_title">" Қонақ үй керемет "</div>
+                                            <p class="test_quote_text">Маған өте қатты ұнады. Келесіде де осы қонақ үйге келетін боламын.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -705,57 +743,20 @@
                             <!-- Testimonial Item -->
                             <div class="owl-item">
                                 <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt=""></div>
+                                    <div class="test_image"><img src="./images/comment/img6.jfif" alt="comment"></div>
                                     <div class="test_icon"><img src="images/backpack.png" alt=""></div>
                                     <div class="test_content_container">
                                         <div class="test_content">
                                             <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
-                                                <div class="test_date">Май 5, 2017</div>
+                                                <div class="test_name">Марат</div>
+                                                <div class="test_date">Мамыр 5, 2018</div>
                                             </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
+                                            <div class="test_quote_title">" Қонақ үй керемет "</div>
+                                            <p class="test_quote_text">Бурабай да керемет. Қонақ үй де керемет. Келгеніме еш өкінбеймін!</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Testimonial Item -->
-                            <div class="owl-item">
-                                <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-                                    <div class="test_icon"><img src="images/backpack.png" alt=""></div>
-                                    <div class="test_content_container">
-                                        <div class="test_content">
-                                            <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
-                                                <div class="test_date">Май 5, 2017</div>
-                                            </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial Item -->
-                            <div class="owl-item">
-                                <div class="test_item">
-                                    <div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-                                    <div class="test_icon"><img src="images/backpack.png" alt=""></div>
-                                    <div class="test_content_container">
-                                        <div class="test_content">
-                                            <div class="test_item_info">
-                                                <div class="test_name">Елена</div>
-                                                <div class="test_date">Май 5, 2017</div>
-                                            </div>
-                                            <div class="test_quote_title">" Лучшее из лучших "</div>
-                                            <p class="test_quote_text">Наконец-то посчастливилось побывать в этой гостинице. Лет пять езжу мимо этой гостиницы. И вот.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
                         <!-- Testimonials Slider Nav - Prev -->
@@ -816,19 +817,20 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="contact_form_container">
-                        <div class="contact_title">Свяжитесь с нами</div>
+                        <a  name="bottom"></a>
+                        <div class="contact_title">Тапсырыс беріңіз</div>
                         <form action="{{route('booking')}}" method="post" id="contact_form" class="contact_form">
                             @csrf
-                            <input name="name" type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Имя" required="required" data-error="Name is required.">
+                            <input name="name" type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Аты" required="required" data-error="Name is required.">
                             <input name="email" type="email" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
-                            <input name="phone" type="number" id="contact_form_name" class="contact_form_name input_field" placeholder="Номер телефона" required="required" data-error="Phone number is required.">
-                            <input name="humans" type="number" id="contact_form_email" class="contact_form_email input_field" placeholder="Количество посетителей" required="required" data-error="Phone number is required.">
+                            <input name="phone" type="number" id="contact_form_name" class="contact_form_name input_field" placeholder="Телефона нөмірі" required="required" data-error="Phone number is required.">
+                            <input name="humans" type="number" id="contact_form_email" class="contact_form_email input_field" placeholder="Қанақтар саны" required="required" data-error="Phone number is required.">
                             
 
-                            <input name="arriving" type="date" id="contact_form_name" class="contact_form_name input_field" placeholder="Дата предпологаемого заезда" required="required" data-error="Phone number is required.">
-                            <input name="departing" type="date" id="contact_form_email" class="contact_form_email input_field" placeholder="Дата предпологаемого выезда" required="required" data-error="Phone number is required.">
+                            <input name="arriving" type="date" id="contact_form_name" class="contact_form_name input_field" placeholder="Көшіп келу күні" required="required" data-error="Phone number is required.">
+                            <input name="departing" type="date" id="contact_form_email" class="contact_form_email input_field" placeholder="Көшіп кету күні" required="required" data-error="Phone number is required.">
                             <select name="type" id="contact_form_subject" class="contact_form_subject input_field" required="required" >
-                                <option style="background: #c5778b;" value="">Категории номеров</option>
+                                <option style="background: #c5778b;" value="">Номерлер катигориясы</option>
                                 <option style="background: #c5778b;" value="Летние комнаты (без удобств 2000тг/чел)">Летние комнаты (без удобств 2000тг/чел)</option>
                                 <option style="background: #c5778b;" value="Летний домик из сруба (без удобств 2000тг/чел)">Летний домик из сруба (без удобств 2000тг/чел)</option>
                                 <option style="background: #c5778b;" value="Летние комнаты (с удобствами 3500тг/чел)">Летние комнаты (с удобствами  3500тг/чел)</option>
@@ -837,12 +839,12 @@
                                 <option style="background: #c5778b;" value="Коттедж 60000тг/чел">Коттедж (60000тг/чел)</option>
                             </select>
                             <select name="callback" id="contact_form_subject" class="contact_form_subject input_field" required="required" >
-                                <option style="background: #c5778b;" value="">Вам нужен звонок обратно?</option>
-                                <option style="background: #c5778b;" value="Позвонить обратно">Позвонить обратно</option>
-                                <option style="background: #c5778b;" value="Не звонить обратно">Не звонить обратно</option>
+                                <option style="background: #c5778b;" value="">Сізге қайта хабарлассынба?</option>
+                                <option style="background: #c5778b;" value="Позвонить обратно">Хабарласу керек</option>
+                                <option style="background: #c5778b;" value="Не звонить обратно">Хабарласу қажеті жоқ</option>
                             </select>
-                            <textarea id="contact_form_message" class="text_field contact_form_message" name="wishes" rows="4" placeholder="Сообщение" required="required" data-error="Please, write us a message."></textarea>
-                            <button type="submit" id="form_submit_button" class="form_submit_button button">Отправить<span></span><span></span><span></span></button>
+                            <textarea id="contact_form_message" class="text_field contact_form_message" name="wishes" rows="4" placeholder="Хаттама" required="required" data-error="Please, write us a message."></textarea>
+                            <button type="submit" id="form_submit_button" class="form_submit_button button">Жіберу<span></span><span></span><span></span></button>
                         </form>
                     </div>
                 </div>
@@ -870,12 +872,12 @@
                 <!-- Footer Column -->
                 <div class="col-lg-3 footer_column">
                     <div class="footer_col">
-                        <div class="footer_title">Наши контакты</div>
+                        <div class="footer_title">Біздің байланыстар</div>
                         <div class="footer_content footer_contact">
                             <ul class="contact_info_list">
                                 <li class="contact_info_item d-flex flex-row">
                                     <div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
-                                    <div class="contact_info_text">Боровое, ул. Обозная 14</div>
+                                    <div class="contact_info_text">Бурабай, Обозная көшесі 14</div>
                                 </li>
                                 <li class="contact_info_item d-flex flex-row">
                                     <div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
@@ -902,18 +904,18 @@
                 <div class="col-lg-3 order-lg-1 order-2  ">
                     <div class="copyright_content d-flex flex-row align-items-center">
                         <div>
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</div>
+                            Дипломдық жоба. Орындаған: Шәріп Нұрсейіт, Сәулембаева Жанбота</div>
                     </div>
                 </div>
                 <div class="col-lg-9 order-lg-2 order-1">
                     <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                         <div class="footer_nav">
                             <ul class="footer_nav_list">
-                                <li class="footer_nav_item"><a href="#">Главная</a></li>
-                                <li class="footer_nav_item"><a href="about.html">О нас</a></li>
-                                <li class="footer_nav_item"><a href="offers.html">Предложения</a></li>
-                                <li class="footer_nav_item"><a href="#">Галерея</a></li>
-                                <li class="footer_nav_item"><a href="contact.html">Контакт</a></li>
+                                <li class="main_nav_item"><a href="/">Басты бет</a></li>
+                                <li class="main_nav_item"><a href="/about">Біз туралы</a></li>
+                                <li class="main_nav_item"><a href="/offers">Бөлмелер</a></li>
+                                <li class="main_nav_item"><a href="/blog">Жаңалықтар</a></li>
+                                <li class="main_nav_item"><a href="/contact">Контакт</a></li>
                             </ul>
                         </div>
                     </div>

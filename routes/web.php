@@ -22,6 +22,7 @@ Route::group(['prefix' => '/'],function (){
    Route::get('/contact','HomeController@contact');
    Route::get('/single_listing','HomeController@singleListing');
    Route::post('/sendRequest','AdminController@sendRequest')->name('booking');
+   Route::get('/blog','HomeController@blog')->name('blog');
 });
 
 Route::group(['prefix' => '/adminPanel'], function (){

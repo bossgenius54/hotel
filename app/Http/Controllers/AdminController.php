@@ -44,4 +44,5 @@ class AdminController extends Controller
             return view('admin.tab1',['elems' => $requests]);
         }
     }
+
 }

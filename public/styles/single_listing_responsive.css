@@ -1,25 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/******************************
-
-[Table of Contents]
-
-1. 1680px
-2. 1440px
-3. 1280px
-4. 1199px
-5. 1024px
-6. 991px
-7. 959px
-8. 880px
-9. 768px
-10. 767px
-11. 539px
-12. 479px
-13. 400px
-
-******************************/
 
 /************
 0. 1730px
@@ -161,41 +142,6 @@
 	}
 }
 
-/************
-1. 1680px
-************/
-
-@media only screen and (max-width: 1680px)
-{
-	
-}
-
-/************
-2. 1440px
-************/
-
-@media only screen and (max-width: 1440px)
-{
-	
-}
-
-/************
-3. 1380px
-************/
-
-@media only screen and (max-width: 1380px)
-{
-	
-}
-
-/************
-3. 1280px
-************/
-
-@media only screen and (max-width: 1280px)
-{
-	
-}
 
 /************
 4. 1199px
@@ -211,24 +157,6 @@
 	{
 		padding-left: 74px;
 	}
-}
-
-/************
-4. 1100px
-************/
-
-@media only screen and (max-width: 1100px)
-{
-
-}
-
-/************
-5. 1024px
-************/
-
-@media only screen and (max-width: 1024px)
-{
-	
 }
 
 /************
@@ -352,32 +280,7 @@
 	}
 }
 
-/************
-7. 959px
-************/
 
-@media only screen and (max-width: 959px)
-{
-	
-}
-
-/************
-8. 880px
-************/
-
-@media only screen and (max-width: 880px)
-{
-	
-}
-
-/************
-9. 768px
-************/
-
-@media only screen and (max-width: 768px)
-{
-	
-}
 
 /************
 10. 767px
@@ -465,6 +368,7 @@
 		-ms-transform: none;
 		-o-transform: none;
 		transform: none;
+        left: 70%;
 	}
 	.logo a
 	{
@@ -472,7 +376,7 @@
 	}
 	.logo a img
 	{
-		width: 16px;
+		width: 70px;
 		margin-right: 7px;
 	}
 	.hamburger i

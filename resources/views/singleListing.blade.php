@@ -81,7 +81,7 @@
                                 <li class="main_nav_item"><a href="/">Басты бет</a></li>
                                 <li class="main_nav_item"><a href="/about">Біз туралы</a></li>
                                 <li class="main_nav_item"><a href="/offers">Бөлмелер</a></li>
-                                <li class="main_nav_item"><a href="/gallary">Галерея</a></li>
+                                <li class="main_nav_item"><a href="/blog">Жаңалықтар</a></li>
                                 <li class="main_nav_item"><a href="/contact">Контакт</a></li>
                             </ul>
                         </div>
@@ -348,18 +348,18 @@
                 <div class="col-lg-3 order-lg-1 order-2  ">
                     <div class="copyright_content d-flex flex-row align-items-center">
                         <div>
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</div>
+                            Дипломдық жоба. Орындаған: Шәріп Нұрсейіт, Сәулембаева Жанбота</div>
                     </div>
                 </div>
                 <div class="col-lg-9 order-lg-2 order-1">
                     <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                         <div class="footer_nav">
                             <ul class="footer_nav_list">
-                                <li class="footer_nav_item"><a href="#">Главная</a></li>
-                                <li class="footer_nav_item"><a href="about.html">О нас</a></li>
-                                <li class="footer_nav_item"><a href="offers.html">Предложения</a></li>
-                                <li class="footer_nav_item"><a href="#">Галерея</a></li>
-                                <li class="footer_nav_item"><a href="contact.html">Контакт</a></li>
+                                <li class="main_nav_item"><a href="/">Басты бет</a></li>
+                                <li class="main_nav_item"><a href="/about">Біз туралы</a></li>
+                                <li class="main_nav_item"><a href="/offers">Бөлмелер</a></li>
+                                <li class="main_nav_item"><a href="/blog">Жаңалықтар</a></li>
+                                <li class="main_nav_item"><a href="/contact">Контакт</a></li>
                             </ul>
                         </div>
                     </div>
