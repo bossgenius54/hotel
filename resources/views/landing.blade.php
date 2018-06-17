@@ -823,6 +823,10 @@
                             <input name="email" type="email" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
                             <input name="phone" type="number" id="contact_form_name" class="contact_form_name input_field" placeholder="Номер телефона" required="required" data-error="Phone number is required.">
                             <input name="humans" type="number" id="contact_form_email" class="contact_form_email input_field" placeholder="Количество посетителей" required="required" data-error="Phone number is required.">
+                            
+
+                            <input name="arriving" type="date" id="contact_form_name" class="contact_form_name input_field" placeholder="Дата предпологаемого заезда" required="required" data-error="Phone number is required.">
+                            <input name="departing" type="date" id="contact_form_email" class="contact_form_email input_field" placeholder="Дата предпологаемого выезда" required="required" data-error="Phone number is required.">
                             <select name="type" id="contact_form_subject" class="contact_form_subject input_field" required="required" >
                                 <option style="background: #c5778b;" value="">Категории номеров</option>
                                 <option style="background: #c5778b;" value="Летние комнаты (без удобств 2000тг/чел)">Летние комнаты (без удобств 2000тг/чел)</option>

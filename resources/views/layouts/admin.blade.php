@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/OwlCarousel2-2.2.1/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('styles/main_styles.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('styles/responsive.css')}}">
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('styles/elements_styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('styles/elements_responsive.css')}}">
 </head>
 
 <body>
@@ -110,15 +114,33 @@
 
     <!-- Home -->
 
-    <div class="home" style="height: 100px!important;">
-
-
-
+    <div class="home" style="height: 200px!important;">
+        <img src="/images/header-bg.jpg" alt="bg" style="width: 100%; height: 100%;" />
     </div>
 
     <!-- Intro -->
 
     <div class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    @if( url()->current() === route('tab1') )
+                    <a href="{{route('tab1')}}" class="btn btn-success">Запросы на добавление </a>
+                    @else
+                    <a href="{{route('tab1')}}" class="btn btn-outline-danger">Запросы на добавление </a>
+                    @endif
+                </div>
+                <div class="col-md-3">
+                    @if( url()->current() === route('tab2') )
+                    <a href="{{route('tab2')}}" class="btn btn-success">Tab2</a>
+                        @else
+                    <a href="{{route('tab2')}}" class="btn btn-outline-danger">Tab2</a>
+                        @endif
+
+                </div>
+            </div>
+        </div>
+        <br />
         <main>
             @yield('content')
         </main>
@@ -209,6 +231,18 @@
 <script src="{{asset('plugins/OwlCarousel2-2.2.1/owl.carousel.js')}}"></script>
 <script src="{{asset('plugins/easing/easing.js')}}"></script>
 <script src="{{asset('js/custom.js')}}"></script>
+
+
+<script src="{{asset('plugins/greensock/TweenMax.min.js')}}"></script>
+<script src="{{asset('plugins/greensock/TimelineMax.min.js')}}"></script>
+<script src="{{asset('plugins/scrollmagic/ScrollMagic.min.js')}}"></script>
+<script src="{{asset('plugins/greensock/animation.gsap.min.js')}}"></script>
+<script src="{{asset('plugins/greensock/ScrollToPlugin.min.js')}}"></script>
+<script src="{{asset('plugins/progressbar/progressbar.min.js')}}"></script>
+<script src="{{asset('plugins/jquery-circle-progress-1.2.2/circle-progress.js')}}"></script>
+<script src="{{asset('plugins/parallax-js-master/parallax.min.js')}}"></script>
+<script src="{{asset('js/elements_custom.js')}}"></script>
+
 
 </body>
 

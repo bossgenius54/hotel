@@ -13,10 +13,12 @@ class AdminController extends Controller
         $email = $request['email'];
         $phone =  $request['phone'];
         $humans = $request['humans'];
+        $arriving = $request['arriving'];
+        $departing = $request['departing'];
         $type = $request['type'];
         $callBack = $request['callback'] or 'Не надо звонить обратно;';
         $text = $request['wishes'] or '';
-        $wishes = $type . ' | ' . $humans . ' персон | ' . $callBack . ' | ' . $text;
+        $wishes = $type . ' | ' . $humans . ' персон | ' . $callBack . ' | ' . $arriving . ' - ' . $departing . ' | ' . $text;
 
         $bookingItem = new RequestBooking();
         $bookingItem->name = $name;

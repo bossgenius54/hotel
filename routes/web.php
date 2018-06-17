@@ -25,6 +25,7 @@ Route::group(['prefix' => '/'],function (){
 });
 
 Route::group(['prefix' => '/adminPanel'], function (){
-    Route::get('/tab1', 'AdminController@bookingPage');
+    Route::get('/tab1', 'AdminController@bookingPage')->name('tab1');
+    Route::get('/tab2', 'AdminController@bookingPage')->name('tab2');
 });
 
