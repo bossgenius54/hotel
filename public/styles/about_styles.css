@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*********************************
+4. Home
+*********************************/
+
+.home
+{
+	width: 100%;
+	height: 100vh;
+	background: transparent;
+}
+.home_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.home_content
+{
+	position: absolute;
+	bottom: 186px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.home_title
+{
+	font-size: 72px;
+	font-weight: 800;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+/*********************************
+5. Intro
+*********************************/
+
+.intro
+{
+	width: 100%;
+	padding-top: 92px;
+	padding-bottom: 105px;
+	background: #f6f9fb;
+}
+.intro_image
+{
+	position: absolute;
+    right: 0;
+    top: 13px;
+}
+.intro_image img{
+    width: 450px;
+    margin-top:50px;
+    border: solid 5px #361354;
+    border-radius: 10px;
+}
+.intro_title
+{
+	font-size: 30px;
+	font-weight: 700;
+	color: #2d2c2c;
+	text-transform: uppercase;
+}
+.intro_text
+{
+	margin-bottom: 0px;
+	color: #888;
+	margin-top: 60px;
+    line-height: 35px;
+}
+.intro_text li{
+    list-style-type: circle;
+    line-height: 35px;
+}
+.hotel-info{
+    margin-bottom: 130px;
+}
+.hotel-offers h3{
+    color: #2d2c2c;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.hotel-offers ul, .intro_text ul{
+    padding-left: 60px;
+}
+
+.hotel-offers ul li{
+    line-height: 35px;
+    list-style-type: circle;
+    color: #888;
+}
