@@ -12,9 +12,9 @@
                         <th scope="col" class="col-md-1">#</th>
                         <th scope="col" class="col-md-2">Имя</th>
                         <th scope="col" class="col-md-2">Эл.Почта</th>
-                        <th scope="col" class="col-md-4">Доп.Инфо</th>
+                        <th scope="col" class="col-md-3">Доп.Инфо</th>
                         <th scope="col" class="col-md-2">Статус</th>
-                        <th scope="col" class="col-md-3">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <th scope="col" class="col-md-1">&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -24,20 +24,36 @@
                             <th scope="row" class="col-md-1">{{$key + 1}}</th>
                             <td class="col-md-2">{{$elem->name}}</td>
                             <td class="col-md-2"><a href="mailto:{{$elem->email}}" >{{$elem->email}}</a> </td>
-                            <td class="col-md-4">
+                            <td class="col-md-3">
                                 <div class="elements_accordions">
                                     <div class="accordion_container">
-                                        <div class="accordion d-flex flex-row align-items-center"><div>WIshes</div></div>
+                                        <div class="accordion d-flex flex-row align-items-center"><div>Кликните что бы смотреть больше</div></div>
                                         <div class="accordion_panel">
-                                            <p>{{$elem->wishes}} Телефон: {{$elem->phone}}</p>
+                                            <p>{{$elem->wishes}} | Телефон: {{$elem->phone}}</p>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td class="col-md-2">
-                                <a href="/" class="btn btn-outline-danger btn-xs" ><i class="fa fa-times-circle"></i>
-                                    Отклонить
-                                </a>
+                                @if($elem->status === '0')
+                                    <a href="/adminPanel/decline/{{$elem->id}}" class="btn btn-outline-danger btn-xs" ><i class="fa fa-times-circle"></i>
+                                        Отклонить
+                                    </a>
+                                    <a href="/adminPanel/accept/{{$elem->id}}" class="btn btn-outline-success btn-xs" ><i class="fa fa-check"></i>
+                                        Принять
+                                    </a>
+                                @elseif($elem->status === '1')
+                                    <a href="/adminPanel/decline/{{$elem->id}}" class="btn btn-outline-danger btn-xs" ><i class="fa fa-times-circle"></i>
+                                        Отклонить
+                                    </a>
+                                @else
+                                    <a href="/adminPanel/accept/{{$elem->id}}" class="btn btn-outline-success btn-xs" ><i class="fa fa-check"></i>
+                                        Принять
+                                    </a>
+                                @endif
+                            </td>
+                            <td class="col-md-1">
+                                <a class="btn btn-outline-danger" style="border:0!important;" href="/adminPanel/delete/{{$elem->id}}">Delete</a>
                             </td>
                         </tr>
                     @endforeach

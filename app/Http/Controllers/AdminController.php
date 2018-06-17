@@ -45,4 +45,31 @@ class AdminController extends Controller
         }
     }
 
+    public function accept ($id)
+    {
+        $accept = RequestBooking::where('id',$id)->first();
+        $accept->status = '1';
+        if ($accept->save())
+        {
+            return redirect()->route('tab1');
+        }
+    }
+    public function decline ($id)
+    {
+        $decline = RequestBooking::where('id',$id)->first();
+        $decline->status = '2';
+        if ($decline->save())
+        {
+            return redirect()->route('tab1');
+        }
+    }
+    public function delete ($id)
+    {
+        $delete = RequestBooking::where('id',$id)->delete();
+
+        if ($delete)
+        {
+            return redirect()->route('tab1');
+        }
+    }
 }
