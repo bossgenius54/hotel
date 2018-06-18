@@ -107,58 +107,24 @@
                     <div class="blog_post_container">
 
                         <!-- Blog Post -->
-
+                        @foreach($news as $key => $article)
                         <div class="blog_post">
                             <div class="blog_post_image">
                                 <div class="newsImg">
-                                    <img src="images/news/news1.jpg" alt="news">
+                                    <img src="/images/news/{{$article->img_name}}" alt="news" />
                                 </div>
                                 <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-                                    <div class="blog_post_day">05</div>
-                                    <div class="blog_post_month">Маусым, 2018</div>
+                                    <div class="blog_post_day">{{$key + 1}}</div>
+                                    <div class="blog_post_month text-center">{{  \Illuminate\Support\Str::words($article->created_at, 10,'') }}</div>
                                 </div>
                             </div>
-                            <div class="blog_post_title"><a href="#">Қонақ үйі курорттың қонақтарына өз есігін ашады</a></div>
+                            <div class="blog_post_title"><a href="#">{{$article->title}}</a></div>
                             <div class="blog_post_text">
-                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+                                <p>{{$article->text}}</p>
                             </div>
                         </div>
+                        @endforeach
 
-                        <!-- Blog Post -->
-
-                        <div class="blog_post">
-                            <div class="blog_post_image">
-                                <div class="newsImg">
-                                    <img src="images/news/news2.jpg" alt="news">
-                                </div>
-                                <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-                                    <div class="blog_post_day">08</div>
-                                    <div class="blog_post_month">Маусым, 2018</div>
-                                </div>
-                            </div>
-                            <div class="blog_post_title"><a href="#">Ағаштан жасалған сауна ашылды</a></div>
-                            <div class="blog_post_text">
-                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-                            </div>
-                        </div>
-
-                        <!-- Blog Post -->
-
-                        <div class="blog_post">
-                            <div class="blog_post_image">
-                                <div class="newsImg">
-                                    <img src="images/news/news3.jpg" alt="news">
-                                </div>
-                                <div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-                                    <div class="blog_post_day">14</div>
-                                    <div class="blog_post_month">Маусым, 2018</div>
-                                </div>
-                            </div>
-                            <div class="blog_post_title"><a href="#">Біздің кең автотұрақ! Сіздің көліктеріңіз үшін тыныш, қауіпсіз орын.</a></div>
-                            <div class="blog_post_text">
-                                <p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-                            </div>
-                        </div>
 
                     </div>
 

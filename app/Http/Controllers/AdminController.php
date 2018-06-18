@@ -2,11 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use App\RequestBooking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
+    public function index()
+    {
+        if (Auth::check())
+        {
+            if (Auth::user()->getAuthIdentifier() === 4){
+                return redirect()->route('tab1');
+            }else {
+                return redirect()->route('for-redirect');
+            }
+        }else {
+            return redirect()->route('login');
+        }
+
+    }
+
     public function sendRequest (Request $request)
     {
         $name = $request['name'];
@@ -29,6 +47,9 @@ class AdminController extends Controller
 
         if ($bookingItem->save())
         {
+            $emailText = 'Ваш запрос был принят, и сейчас рассматривается. В течении 10 мин с вами свяжутся по email или телефону';
+//            Mail::send('landing',['email'=
+            mail($email,'Ваш запрос рассматривается',$emailText);
             return redirect()->route('for-redirect');
         } else {
             return redirect()->route('/hello');
@@ -42,6 +63,34 @@ class AdminController extends Controller
         if ($requests)
         {
             return view('admin.tab1',['elems' => $requests]);
+        }
+    }
+
+    public function newsPanel ()
+    {
+        $news = News::orderBy('created_at','desc')->get();
+        if ($news)
+        {
+            return view('admin.tab2',['elems'=>$news]);
+        }
+    }
+
+    public function insertNews (Request $request)
+    {
+        $title = $request['title'];
+        $img_name = $request['img_name'];
+        $text =  $request['text'];
+
+        $news = new News();
+        $news->title = $title;
+        $news->img_name = $img_name;
+        $news->text = $text;
+
+        if ($news->save())
+        {
+            return redirect()->route('tab2');
+        } else {
+            return redirect()->route('/hello');
         }
     }
 
@@ -72,4 +121,15 @@ class AdminController extends Controller
             return redirect()->route('tab1');
         }
     }
+
+    public function deleteNews($id)
+    {
+        $delete = News::where('id',$id)->delete();
+
+        if ($delete)
+        {
+            return redirect()->route('tab2');
+        }
+    }
+
 }

@@ -103,11 +103,11 @@
         <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
             <div class="menu_close_container"><div class="menu_close"></div></div>
             <ul>
-                <li class="menu_item"><a href="#">Басты бет</a></li>
-                <li class="menu_item"><a href="about.html">Біз туралы</a></li>
-                <li class="menu_item"><a href="offers.html">Бөлмелер</a></li>
-                <li class="menu_item"><a href="#">Галерея</a></li>
-                <li class="menu_item"><a href="contact.html">Контакт</a></li>
+                <li class="main_nav_item"><a href="/">Басты бет</a></li>
+                <li class="main_nav_item"><a href="/about">Біз туралы</a></li>
+                <li class="main_nav_item"><a href="/offers">Бөлмелер</a></li>
+                <li class="main_nav_item"><a href="/gallary">Галерея</a></li>
+                <li class="main_nav_item"><a href="/contact">Контакт</a></li>
             </ul>
         </div>
     </div>
@@ -132,13 +132,14 @@
                 </div>
                 <div class="col-md-3">
                     @if( url()->current() === route('tab2') )
-                    <a href="{{route('tab2')}}" class="btn btn-success">Tab2</a>
+                    <a href="{{route('tab2')}}" class="btn btn-success">Новости</a>
                         @else
-                    <a href="{{route('tab2')}}" class="btn btn-outline-danger">Tab2</a>
+                    <a href="{{route('tab2')}}" class="btn btn-outline-danger">Новости</a>
                         @endif
 
                 </div>
             </div>
+            <hr />
         </div>
         <br />
         <main>

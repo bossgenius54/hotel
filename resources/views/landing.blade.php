@@ -99,11 +99,11 @@
         <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
             <div class="menu_close_container"><div class="menu_close"></div></div>
             <ul>
-                <li class="menu_item"><a href="#">Басты бет</a></li>
-                <li class="menu_item"><a href="about.html">Біз туралы</a></li>
-                <li class="menu_item"><a href="offers.html">Бөлмелер</a></li>
-                <li class="menu_item"><a href="#">Галерея</a></li>
-                <li class="menu_item"><a href="contact.html">Контакт</a></li>
+                <li class="menu_item"><a href="/">Басты бет</a></li>
+                <li class="menu_item"><a href="/about">Біз туралы</a></li>
+                <li class="menu_item"><a href="/offers">Бөлмелер</a></li>
+                <li class="menu_item"><a href="/blog">Жаңалықтар</a></li>
+                <li class="menu_item"><a href="/contact">Контакт</a></li>
             </ul>
         </div>
     </div>
@@ -136,7 +136,7 @@
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                             <h1>Солнечный</h1>
-                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="./about.html">Ары қарай оқу<span></span><span></span><span></span></a></div>
+                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="/about">Ары қарай оқу<span></span><span></span><span></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                             <h1>Солнечный</h1>
-                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="./about.html">Ары қарай оқу<span></span><span></span><span></span></a></div>
+                            <div class="button home_slider_button"><div class="button_bcg"></div><a href="/about">Ары қарай оқу<span></span><span></span><span></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                                 <p class="cta_text">«Солнечный» қонақ үйі тау мен өзен арасында көркем ортада, өзеннен 500 метр аралықта тыныш жерде, Бурабай демалу орнының дәл центрінде орналасқан. Біз сіздерге 2,3,4-адамдық ыңғайлы бөлмелер ұсынамыз.
                                 </p>
                                 <br />
-                                <div class="button cta_button"><div class="button_bcg"></div><a href="./about.html">Оқу<span></span><span></span><span></span></a></div>
+                                <div class="button cta_button"><div class="button_bcg"></div><a href="/about">Оқу<span></span><span></span><span></span></a></div>
                             </div>
 
                             <!-- CTA Slider Item -->
@@ -341,7 +341,7 @@
                                     <i></i>
                                 </div>
                                 <p class="cta_text"> Қарағайлы орман айналасында, шудан алыс жердеміз. Бізде ыңғайлы эконом классты бөлмелерде орналастыру қарастарылыған. Сонымен қатар бізде тегін WiFi, жеке тұрақ орны, кабельді телевизор, мангалдар, ыдыстар,гриль-зона, бассейн, құмсалғыштармен қамтамасыз етілген.</p>
-                                <div class="button cta_button"><div class="button_bcg"></div><a href="./about.html">Оқу<span></span><span></span><span></span></a></div>
+                                <div class="button cta_button"><div class="button_bcg"></div><a href="/about">Оқу<span></span><span></span><span></span></a></div>
                             </div>
 
                         </div>
@@ -824,7 +824,7 @@
                             <input name="name" type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Аты" required="required" data-error="Name is required.">
                             <input name="email" type="email" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
                             <input name="phone" type="number" id="contact_form_name" class="contact_form_name input_field" placeholder="Телефона нөмірі" required="required" data-error="Phone number is required.">
-                            <input name="humans" type="number" id="contact_form_email" class="contact_form_email input_field" placeholder="Қанақтар саны" required="required" data-error="Phone number is required.">
+                            <input name="humans" type="number" id="contact_form_email" class="contact_form_email input_field" placeholder="Қонақтар саны" required="required" data-error="Phone number is required.">
                             
 
                             <input name="arriving" type="date" id="contact_form_name" class="contact_form_name input_field" placeholder="Көшіп келу күні" required="required" data-error="Phone number is required.">

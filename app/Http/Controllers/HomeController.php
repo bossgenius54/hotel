@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -50,6 +51,7 @@ class HomeController extends Controller
     }
     public function blog ()
     {
-        return view('blog');
+        $news = News::orderBy('created_at','desc')->get();
+        return view('blog',['news'=>$news]);
     }
 }

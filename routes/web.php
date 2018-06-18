@@ -26,10 +26,13 @@ Route::group(['prefix' => '/'],function (){
 });
 
 Route::group(['prefix' => '/adminPanel'], function (){
+    Route::get('/', 'AdminController@index');
     Route::get('/tab1', 'AdminController@bookingPage')->name('tab1');
     Route::get('/accept/{id}', 'AdminController@accept');
     Route::get('/decline/{id}', 'AdminController@decline');
     Route::get('/delete/{id}', 'AdminController@delete');
-    Route::get('/tab2', 'AdminController@bookingPage')->name('tab2');
+    Route::get('/tab2', 'AdminController@newsPanel')->name('tab2');
+    Route::post('/insertNews', 'AdminController@insertNews')->name('insert-news');
+    Route::get('/deleteNews/{id}', 'AdminController@deleteNews');
 });
 
